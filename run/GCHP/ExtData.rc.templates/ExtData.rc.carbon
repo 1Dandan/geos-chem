@@ -137,6 +137,9 @@ XLAIMULTI cm2_cm-2 N Y %y4-%m2-%d2T00:00:00 none none XLAIMULTI ./HcoDir/Yuan_XL
 # %%%%% CH4 emissions %%%%%
 #==============================================================================
 
+# --- UseTotalPriorEmis ---
+CH4_Emis_Prior kg/m2/s N Y F%y4-%m2-%d2T00:00:00 none none EmisCH4_Total ../../prior_run/OutputDir/HEMCO_sa_diagnostics.$YYYY$MM$DD0000.nc
+
 # --- Gridded GHGI v2 Express Extension (Maasakkers et al., ES&T, 2023) ---
 #
 GHGI_EE_OIL_EXPLORATION         molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1B2a_Petroleum_Systems_Exploration   ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
@@ -411,6 +414,25 @@ CO2_WEEKLY  1 2006 Y F%y4-%m2-%d2T00:00:00  none none weekly_scale_factors  ./Hc
 # --- Domestic aviation surface correction factor ---
 AVIATION_SURF_CORR      1       2004 Y F%y2-01-01T00:00:00  none none CO2 ./HcoDir/CO2/v2022-11/FOSSIL/Aviation_SurfCorr_SclFac.1x1.nc
 OCEANCO2_SCALED_MONTHLY kg/m2/s N    Y F%y2-%m2-01T00:00:00 none none CO2 ./HcoDir/CO2/v2022-11/OCEAN/Scaled_Ocean_CO2_monthly.nc
+
+#==============================================================================
+# --- Scale factors for posterior run ---
+#
+# Enable emission scale factors by setting the use_emission_scale_factor or
+# use_OH_scale_factor options to true in geoschem_config.yml. These fields are
+# obtained from HEMCO and applied in GEOS-Chem/GeosCore/global_ch4_mod.F90.
+#
+# Entries below are provided for examples only. Add your own here!
+#==============================================================================
+#EMIS_SF 1 N Y - none none ScaleFactor gridded_posterior.nc
+#OH_SF   1 N Y %y4-01-01T00:00:00   none none SF_OH       Post_SF_OH.nc
+
+#==============================================================================
+# --- Scale factors for analytical inversions ---
+#==============================================================================
+# Add perturbations to individual state vector element (N) following this format
+SCALE_PERT       1 N Y 2000-01-01T00:00:00 none none scale       ./gridded_pert_scale.nc
+#SCALE_ELEM_200N  1 N Y 2000-01-01T00:00:00 none none StateVector ./StateVector.nc
 
 ###############################################################################
 ###
