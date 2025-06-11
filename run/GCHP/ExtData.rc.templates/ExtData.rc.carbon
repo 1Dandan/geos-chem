@@ -415,6 +415,11 @@ CO2_WEEKLY  1 2006 Y F%y4-%m2-%d2T00:00:00  none none weekly_scale_factors  ./Hc
 AVIATION_SURF_CORR      1       2004 Y F%y2-01-01T00:00:00  none none CO2 ./HcoDir/CO2/v2022-11/FOSSIL/Aviation_SurfCorr_SclFac.1x1.nc
 OCEANCO2_SCALED_MONTHLY kg/m2/s N    Y F%y2-%m2-01T00:00:00 none none CO2 ./HcoDir/CO2/v2022-11/OCEAN/Scaled_Ocean_CO2_monthly.nc
 
+#========================================================
+# --- Scale factors for OH ---
+#========================================================
+#OH_pert_factor 1 N Y 2000-01-01-T00:00:00 none none oh_scale ./gridded_perturbation_oh_scale.nc
+
 #==============================================================================
 # --- Scale factors for posterior run ---
 #
@@ -424,14 +429,13 @@ OCEANCO2_SCALED_MONTHLY kg/m2/s N    Y F%y2-%m2-01T00:00:00 none none CO2 ./HcoD
 #
 # Entries below are provided for examples only. Add your own here!
 #==============================================================================
-#EMIS_SF 1 N Y - none none ScaleFactor gridded_posterior.nc
-#OH_SF   1 N Y %y4-01-01T00:00:00   none none SF_OH       Post_SF_OH.nc
+EMIS_SF 1 N Y 2000-01-01T00:00:00   none none ScaleFactor gridded_posterior.nc
 
 #==============================================================================
 # --- Scale factors for analytical inversions ---
 #==============================================================================
 # Add perturbations to individual state vector element (N) following this format
-SCALE_PERT       1 N Y 2000-01-01T00:00:00 none none scale       ./gridded_pert_scale.nc
+SCALE_PERT       1 N Y 2000-01-01T00:00:00 none none scale       ./gridded_pert_scale_1.nc
 #SCALE_ELEM_200N  1 N Y 2000-01-01T00:00:00 none none StateVector ./StateVector.nc
 
 ###############################################################################

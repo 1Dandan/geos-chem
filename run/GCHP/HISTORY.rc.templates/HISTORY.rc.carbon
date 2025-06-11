@@ -325,11 +325,11 @@ COLLECTIONS: 'SpeciesConc',
   LevelEdgeDiags.mode:           'time-averaged'
   LevelEdgeDiags.fields:         'Met_CMFMC   ', 'GCHPchem',
                                  'Met_PEDGE   ', 'GCHPchem',
-                                 'Met_PEDGEDRY', 'GCHPchem',
-                                 'Met_PFICU   ', 'GCHPchem',
-                                 'Met_PFILSAN ', 'GCHPchem',
-                                 'Met_PFLCU   ', 'GCHPchem',
-                                 'Met_PFLLSAN ', 'GCHPchem',
+                                #'Met_PEDGEDRY', 'GCHPchem',
+                                #'Met_PFICU   ', 'GCHPchem',
+                                #'Met_PFILSAN ', 'GCHPchem',
+                                #'Met_PFLCU   ', 'GCHPchem',
+                                #'Met_PFLLSAN ', 'GCHPchem',
 ::
 #==============================================================================
   StateMet.template:       '%y4%m2%d2_%h2%n2z.nc4',
