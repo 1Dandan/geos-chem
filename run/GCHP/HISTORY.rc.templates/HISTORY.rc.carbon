@@ -320,11 +320,28 @@ COLLECTIONS: 'SpeciesConc',
   GCHPctmEnvLevCenter.frequency:      010000
   GCHPctmEnvLevCenter.duration:       010000
   GCHPctmEnvLevCenter.mode:           'time-averaged'
-  GCHPctmEnvLevCenter.fields:         'SPHU0_R4    ', 'GCHPctmEnv',
-                                      'CX_R4       ', 'GCHPctmEnv',
-                                      'CY_R4       ', 'GCHPctmEnv',
-                                      'MFX_R4      ', 'GCHPctmEnv',
-                                      'MFY_R4      ', 'GCHPctmEnv',
+  GCHPctmEnvLevCenter.fields:         'SPHU0    ', 'GCHPctmEnv',
+                                      'CX       ', 'GCHPctmEnv',
+                                      'CY       ', 'GCHPctmEnv',
+                                      'MFX      ', 'GCHPctmEnv',
+                                      'MFY      ', 'GCHPctmEnv',
+::
+#==============================================================================
+# Diagnostics on level edges
+  LevelEdgeDiags.template:       '%y4%m2%d2_%h2%n2z.nc4',
+  LevelEdgeDiags.format:         'CFIO',
+  LevelEdgeDiags.timestampStart: .true.
+  LevelEdgeDiags.monthly:        1
+  LevelEdgeDiags.frequency:      010000
+  LevelEdgeDiags.duration:       010000
+  LevelEdgeDiags.mode:           'time-averaged'
+  LevelEdgeDiags.fields:         'Met_CMFMC   ', 'GCHPchem',
+                                 'Met_PEDGE   ', 'GCHPchem',
+                                #'Met_PEDGEDRY', 'GCHPchem',
+                                #'Met_PFICU   ', 'GCHPchem',
+                                #'Met_PFILSAN ', 'GCHPchem',
+                                #'Met_PFLCU   ', 'GCHPchem',
+                                #'Met_PFLLSAN ', 'GCHPchem',
 ::
 #==============================================================================
   KppDiags.template:          '%y4%m2%d2_%h2%n2z.nc4',
