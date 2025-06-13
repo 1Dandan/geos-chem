@@ -142,33 +142,33 @@ CH4_Emis_Prior kg/m2/s N Y F%y4-%m2-%d2T00:00:00 none none EmisCH4_Total ../../p
 
 # --- Gridded GHGI v2 Express Extension (Maasakkers et al., ES&T, 2023) ---
 #
-GHGI_EE_OIL_EXPLORATION         molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1B2a_Petroleum_Systems_Exploration   ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OIL_PRODUCTION          molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1B2a_Petroleum_Systems_Production    ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OIL_REFINING            molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1B2a_Petroleum_Systems_Refining      ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OIL_TRANSPORT           molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1B2a_Petroleum_Systems_Transport     ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_GAS_DISTRIBUTION        molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1B2b_Natural_Gas_Distribution        ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_GAS_EXPLORATION         molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1B2b_Natural_Gas_Exploration         ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_GAS_PROCESSING          molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1B2b_Natural_Gas_Processing          ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_GAS_PRODUCTION          molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1B2b_Natural_Gas_Production          ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_GAS_TRANSMISSION        molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1B2b_Natural_Gas_TransmissionStorage ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_GAS_POSTMETER           molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_Supp_1B2b_PostMeter                  ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_COAL_UNDERGROUND        molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1B1a_Underground_Coal                ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_COAL_SURFACE            molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1B1a_Surface_Coal                    ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_COAL_ABANDONED          molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1B1a_Abandoned_Coal                  ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_LIVESTOCK_ENT           molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_3A_Enteric_Fermentation              ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_LIVESTOCK_MAN           molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_3B_Manure_Management                 ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_LANDFILLS_IND           molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_5A1_Landfills_Industrial             ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_LANDFILLS_MSW           molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_5A1_Landfills_MSW                    ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_LANDFILLS_COMP          molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_5B1_Composting                       ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_WASTEWATER_DOM          molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_5D_Wastewater_Treatment_Domestic     ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_WASTEWATER_IND          molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_5D_Wastewater_Treatment_Industrial   ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_RICE                    molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_3C_Rice_Cultivation                  ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OTHER_MCOMB             molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1A_Combustion_Mobile                 ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OTHER_SCOMB             molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_1A_Combustion_Stationary             ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OTHER_PIND              molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_2B8_Industry_Petrochemical           ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OTHER_FIND              molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_2C2_Industry_Ferroalloy              ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OTHER_BURN              molec/cm2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4_3F_Field_Burning                     ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
-GHGI_EE_OTHER_ABOG              molec/cm2/s N Y F%y4-01-01T00:00:00  none none  emi_ch4_1B2ab_Abandoned_Oil_Gas              ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OIL_EXPLORATION         kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_1B2a_Petroleum_Systems_Exploration   ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OIL_PRODUCTION          kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_1B2a_Petroleum_Systems_Production    ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OIL_REFINING            kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_1B2a_Petroleum_Systems_Refining      ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OIL_TRANSPORT           kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_1B2a_Petroleum_Systems_Transport     ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_GAS_DISTRIBUTION        kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B2b_Natural_Gas_Distribution        ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_GAS_EXPLORATION         kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_1B2b_Natural_Gas_Exploration         ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_GAS_PROCESSING          kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B2b_Natural_Gas_Processing          ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_GAS_PRODUCTION          kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_1B2b_Natural_Gas_Production          ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_GAS_TRANSMISSION        kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B2b_Natural_Gas_TransmissionStorage ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_GAS_POSTMETER           kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_Supp_1B2b_PostMeter                  ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_COAL_UNDERGROUND        kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B1a_Underground_Coal                ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_COAL_SURFACE            kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B1a_Surface_Coal                    ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_COAL_ABANDONED          kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B1a_Abandoned_Coal                  ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_LIVESTOCK_ENT           kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_3A_Enteric_Fermentation              ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_LIVESTOCK_MAN           kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_3B_Manure_Management                 ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_LANDFILLS_IND           kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_5A1_Landfills_Industrial             ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_LANDFILLS_MSW           kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_5A1_Landfills_MSW                    ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_LANDFILLS_COMP          kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_5B1_Composting                       ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_WASTEWATER_DOM          kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_5D_Wastewater_Treatment_Domestic     ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_WASTEWATER_IND          kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_5D_Wastewater_Treatment_Industrial   ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_RICE                    kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_3C_Rice_Cultivation                  ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OTHER_MCOMB             kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1A_Combustion_Mobile                 ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OTHER_SCOMB             kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_1A_Combustion_Stationary             ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OTHER_PIND              kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_2B8_Industry_Petrochemical           ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OTHER_FIND              kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_2C2_Industry_Ferroalloy              ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OTHER_BURN              kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4_3F_Field_Burning                     ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
+GHGI_EE_OTHER_ABOG              kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B2ab_Abandoned_Oil_Gas              ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
 
 # --- Scarpelli Mexico ---
 MEX_OIL          kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_oil_2015.nc
