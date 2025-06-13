@@ -171,15 +171,15 @@ GHGI_EE_OTHER_BURN              kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462
 GHGI_EE_OTHER_ABOG              kg/m2/s N Y F%y4-01-01T00:00:00  none 2.66350462E-22  emi_ch4_1B2ab_Abandoned_Oil_Gas              ./HcoDir/CH4/v2023-07/Gridded_GHGI_v2/Express_Extension_Gridded_GHGI_Methane_v2_%y4.nc
 
 # --- Scarpelli Mexico ---
-MEX_OIL          kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_oil_2015.nc
-MEX_GAS          kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_gas_2015.nc
-MEX_COAL         kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_coal_2015.nc
-MEX_LIVESTOCK_A  kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_livestock_A_2015.nc
-MEX_LIVESTOCK_B  kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_livestock_B_2015.nc
-MEX_LANDFILLS    kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_landfill_2015.nc
-MEX_WASTEWATER   kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_waste_2015.nc
-MEX_RICE         kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_rice_2015.nc
-MEX_OTHER        kg/m2/s N Y - none none  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_other_anthro_2015.nc
+MEX_OIL          kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_oil_2015.nc
+MEX_GAS          kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_gas_2015.nc
+MEX_COAL         kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_coal_2015.nc
+MEX_LIVESTOCK_A  kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_livestock_A_2015.nc
+MEX_LIVESTOCK_B  kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_livestock_B_2015.nc
+MEX_LANDFILLS    kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_landfill_2015.nc
+MEX_WASTEWATER   kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_waste_2015.nc
+MEX_RICE         kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_rice_2015.nc
+MEX_OTHER        kg/m2/s N Y - none 2.66350462E-22  emis_ch4  ./HcoDir/CH4/v2022-11/Scarpelli_Mexico/MEX_Tia2020_other_anthro_2015.nc
 
 # --- Scarpelli Canada ---
 CAN_OIL_GAS_COMBUSTION  kg/m2/s N Y - none none  oil_gas_combustion_total   ./HcoDir/CH4/v2022-01/Scarpelli_Canada/can_emis_oil_gas_combustion_2018.nc
@@ -235,7 +235,7 @@ EDGAR8_CH4_SWD_INC             kg/m2/s N Y F%y4-%m2-01T00:00:00  none none emi_c
 # CMIP6_BB_CH4 %y4-%m2-01T00:00:00 none none  CH4_shp  ./HcoDir/CMIP6/v2021-01/$GCAP2SCENARIO/$GCAP2SCENARIO_%y4.nc4
 
 # --- JPL WetCHARTs v1.0 (Bloom et al., https://doi.org/10.3334/ORNLDAAC/1502) ---
-JPLW_CH4  kg/m2/s N Y F%y4-%m2-01T00:00:00 none none  emi_ch4  ./HcoDir/CH4/v2024-01/JPL_WetCharts/HEensemble/JPL_WetCharts_2010-2019.Ensemble_Mean.0.5x0.5.nc
+JPLW_CH4  kg/m2/s N Y F%y4-%m2-01T00:00:00 none 2.66350462E-22  emi_ch4  ./HcoDir/CH4/v2024-01/JPL_WetCharts/HEensemble/JPL_WetCharts_2010-2019.Ensemble_Mean.0.5x0.5.nc
 
 # --- Geological seeps ---
 CH4_SEEPS kg/m2/s N Y - none none  emi_ch4  ./HcoDir/CH4/v2020-04/Seeps/Etiope_CH4GeologicalEmis_ScaledToHmiel.1x1.nc
