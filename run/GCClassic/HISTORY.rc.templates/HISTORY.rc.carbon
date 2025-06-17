@@ -101,7 +101,7 @@ COLLECTIONS: 'Restart',
   SpeciesConc.duration:       ${RUNDIR_HIST_TIME_AVG_DUR}
   SpeciesConc.mode:           'time-averaged'
   SpeciesConc.fields:         'SpeciesConcVV_?ADV?           ',
-                              ##'SpeciesConcMND_?ADV?          ',
+                              #'SpeciesConcMND_?ADV?          ',
 ::
 #==============================================================================
 # %%%%% THE Budget COLLECTION %%%%%
@@ -191,11 +191,11 @@ COLLECTIONS: 'Restart',
   LevelEdgeDiags.mode:        'time-averaged'
   LevelEdgeDiags.fields:      'Met_CMFMC                     ',
                               'Met_PEDGE                     ',
-                              'Met_PEDGEDRY                  ',
-                              'Met_PFICU                     ',
-                              'Met_PFILSAN                   ',
-                              'Met_PFLCU                     ',
-                              'Met_PFLLSAN                   ',
+                              #'Met_PEDGEDRY                  ',
+                              #'Met_PFICU                     ',
+                              #'Met_PFILSAN                   ',
+                              #'Met_PFLCU                     ',
+                              #'Met_PFLLSAN                   ',
 ::
 #==============================================================================
 # %%%%% THE SatDiagn COLLECTION %%%%%
