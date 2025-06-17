@@ -105,6 +105,7 @@ COLLECTIONS: 'Restart',
   SpeciesConc.mode:           'time-averaged'
   SpeciesConc.fields:         'SpeciesConcVV_?ADV?           ',
                               #'SpeciesConcMND_?ADV?          ',
+                              #'SpeciesConcMND_?ADV?          ',
 ::
 #==============================================================================
 # %%%%% THE Budget COLLECTION %%%%%
@@ -180,6 +181,25 @@ COLLECTIONS: 'Restart',
   ConcAfterChem.duration:     ${RUNDIR_HIST_TIME_AVG_DUR}
   ConcAfterChem.mode:         'time-averaged'
   ConcAfterChem.fields:       'OHconcAfterChem               ',
+::
+#==============================================================================
+# %%%%% THE LevelEdgeDiags COLLECTION %%%%%
+#
+# Diagnostics that are defined on grid box level edges
+#
+# Available for all simulations
+#==============================================================================
+  LevelEdgeDiags.template:    '%y4%m2%d2_%h2%n2z.nc4',
+  LevelEdgeDiags.frequency:   ${RUNDIR_HIST_TIME_AVG_FREQ}
+  LevelEdgeDiags.duration:    ${RUNDIR_HIST_TIME_AVG_DUR}
+  LevelEdgeDiags.mode:        'time-averaged'
+  LevelEdgeDiags.fields:      'Met_CMFMC                     ',
+                              'Met_PEDGE                     ',
+                              #'Met_PEDGEDRY                  ',
+                              #'Met_PFICU                     ',
+                              #'Met_PFILSAN                   ',
+                              #'Met_PFLCU                     ',
+                              #'Met_PFLLSAN                   ',
 ::
 #==============================================================================
 # %%%%% THE KppDiags COLLECTION %%%%%
@@ -425,3 +445,4 @@ COLLECTIONS: 'Restart',
   BoundaryConditions.mode:       'instantaneous'
   BoundaryConditions.fields:     'SpeciesBC_?ADV?             ',
 ::
+
