@@ -418,7 +418,7 @@ OCEANCO2_SCALED_MONTHLY kg/m2/s N    Y F%y2-%m2-01T00:00:00 none none CO2 ./HcoD
 #========================================================
 # --- Scale factors for OH ---
 #========================================================
-#OH_pert_factor 1 N Y 2000-01-01-T00:00:00 none none oh_scale ./gridded_perturbation_oh_scale.nc
+#OH_pert_factor 1 N Y - none none oh_scale ./gridded_perturbation_oh_scale.nc
 
 #==============================================================================
 # --- Scale factors for posterior run ---
@@ -429,7 +429,7 @@ OCEANCO2_SCALED_MONTHLY kg/m2/s N    Y F%y2-%m2-01T00:00:00 none none CO2 ./HcoD
 #
 # Entries below are provided for examples only. Add your own here!
 #==============================================================================
-EMIS_SF 1 N Y 2000-01-01T00:00:00   none none ScaleFactor gridded_posterior.nc
+EMIS_SF 1 N Y -   none none ScaleFactor gridded_posterior.nc
 
 #==============================================================================
 # --- Scale factors for analytical inversions ---
