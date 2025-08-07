@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Use monthly GFED4 intead of daily GFED4 to avoid inconsistent fire emissions across resolutions
 - `OH_PosteriorSF` is never used in IMI and thus deleted
 - Update scaling factor ID at 3000 to avoid conflicts with CEDS_01x01 scaling factor enabled in carbon simulation for IMI analytical inversion
+- Added the capability for GCHP simulations to use CH4 restarts for Jacobian Tracers
 
 ## [14.6.2] - 2025-06-11
 ### Added
