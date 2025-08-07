@@ -4,6 +4,13 @@ This file documents all notable changes to the GEOS-Chem repository starting in 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unrealeased] - TBD
+### Fixed
+- Fixed time-range and units for CH4 emission inventories to be consistent with the corresponding netCDF files in ExtData directory for `HEMCO_Congig.rc` and `ExtData.rc`
+- Use daily GFED4 intead of monthly GFED4 to avoid inconsistent fire emissions across resolutions
+- `OH_PosteriorSF` is never used in IMI and thus deleted
+- Update scaling factor ID at 3000 to avoid conflicts with CEDS_01x01 scaling factor enabled in carbon simulation for IMI analytical inversion
+
 ## [14.6.2] - 2025-06-11
 ### Added
 - Added MCHgMAP geogenic emissions (2010-2020) from Dastoor et al. (2025)
