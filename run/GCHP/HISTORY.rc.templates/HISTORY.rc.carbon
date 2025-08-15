@@ -175,6 +175,8 @@ COLLECTIONS: 'SpeciesConc',
   SpeciesConc.duration:       240000
   SpeciesConc.mode:           'time-averaged'
   SpeciesConc.fields:         'SpeciesConcVV_CH4    ', 'GCHPchem',
+                           'Met_AIRDEN     ', 'GCHPchem',
+                           'Met_BXHEIGHT   ', 'GCHPchem',
                               'SpeciesConcVV_CO     ', 'GCHPchem',
                               'SpeciesConcVV_CO2    ', 'GCHPchem',
                               'SpeciesConcVV_OCS    ', 'GCHPchem',
