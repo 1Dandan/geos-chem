@@ -71,8 +71,8 @@ Mask fractions:              false
     --> GRPI                   :       true     # 2022
     --> EDGARv8                :       true     # 2010-2022
     --> QFED2                  :       false    # 2009-2015
-    --> JPL_WETCHARTS          :       true     # 2010
-    --> LPJ_MERRA2             :       false    # 2018-2023
+    --> JPL_WETCHARTS          :       false     # 2010
+    --> LPJ_MERRA2             :       true      # 2018-2023
     --> SEEPS                  :       true     # 2012
     --> LAKES                  :       false    # 2009-2015
     --> RESERVOIRS             :       true     # 2022
