@@ -73,7 +73,8 @@ Mask fractions:              false
     --> GRPI                   :       true     # 2022
     --> EDGARv8                :       true     # 2010-2022
     --> QFED2                  :       false    # 2009-2015
-    --> JPL_WETCHARTS          :       true     # 2010
+    --> JPL_WETCHARTS          :       false    # 2010
+    --> LPJ_MERRA2             :       true     # 2018-2023
     --> SEEPS                  :       true     # 2012
     --> LAKES                  :       false    # 2009-2015
     --> RESERVOIRS             :       true     # 2022
@@ -503,6 +504,10 @@ Mask fractions:              false
 (((JPL_WETCHARTS
 0 JPLW_CH4  $ROOT/CH4/v2024-01/JPL_WetCharts/HEensemble/JPL_WetCharts_2010-2019.Ensemble_Mean.0.5x0.5.nc emi_ch4 2010/1-12/1/0 C xy molec/cm2/s CH4 - 10 1
 )))JPL_WETCHARTS
+
+(((LPJ_MERRA2
+0 LPJ_CH4 /n/holylfs06/LABS/jacob_lab2/Lab/dzhang8/LPJ_MERRA2/LPJ_MERRA2_$YYYY_0.5x0.5.nc         emis_ch4 2018-2023/1-12/1/0 C xy kg/m2/s CH4 - 10 1
+)))LPJ_MERRA2
 
 #==============================================================================
 # --- CH4: Geological Seeps ---
