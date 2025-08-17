@@ -774,14 +774,9 @@ CONTAINS
                       ENDIF
                    ENDIF
 #endif
-                   ! If emission flux is too negative to induce negative concentrations, set concentrations to be tiny (D. Zhang)
-                   IF ( State_Chm%Species(N)%Conc(I,J,L) + FLUX < 0.0_fp) THEN
-                     State_Chm%Species(N)%Conc(I,J,L) = 1.0e-26_fp
-                   ELSE
-                     ! Add to species array
-                     State_Chm%Species(N)%Conc(I,J,L) = &
-                           State_Chm%Species(N)%Conc(I,J,L) + FLUX
-                   ENDIF
+                   ! Add to species array
+                   State_Chm%Species(N)%Conc(I,J,L) = &
+                        State_Chm%Species(N)%Conc(I,J,L) + FLUX
                    
                 ENDIF
              ENDIF
@@ -804,7 +799,8 @@ CONTAINS
                             ' This may be fixed by increasing the'        //  &
                             ' background concentration or by shortening'  //  &
                             ' the transport time step.'
-                   RC = GC_FAILURE
+                  !  RC = GC_FAILURE
+                  State_Chm%Species(N)%Conc(I,J,L) = 1.0e-26_fp
                 ENDIF
 #endif
              ENDIF
