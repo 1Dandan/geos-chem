@@ -774,10 +774,16 @@ CONTAINS
                       ENDIF
                    ENDIF
 #endif
-
-                   ! Add to species array
-                   State_Chm%Species(N)%Conc(I,J,L) = &
-                         State_Chm%Species(N)%Conc(I,J,L) + FLUX
+                   ! If emission flux is too negative to induce negative concentrations, set concentrations to be tiny (D. Zhang)
+                   IF ( State_Chm%Species(N)%Conc(I,J,L) + FLUX < 0.0_fp) THEN
+                     FLUX = 1.0e-26_fp - State_Chm%Species(N)%Conc(I,J,L)
+                     State_Chm%Species(N)%Conc(I,J,L) = 1.0e-26_fp
+                   ELSE
+                     ! Add to species array
+                     State_Chm%Species(N)%Conc(I,J,L) = &
+                           State_Chm%Species(N)%Conc(I,J,L) + FLUX
+                   ENDIF
+                   
                 ENDIF
              ENDIF
 
