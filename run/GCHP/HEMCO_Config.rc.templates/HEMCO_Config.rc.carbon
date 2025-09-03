@@ -511,7 +511,7 @@ Mask fractions:              false
 # Reference: East et al., https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024GL108494
 #==============================================================================
 (((LPJ_MERRA2
-0 LPJ_CH4 $ROOT/CH4/v2025-09/LPJ_MERRA2/LPJ_MERRA2_$YYYY_0.5x0.5.nc emis_ch4 2018-2023/1-12/1/0 C xy kg/m2/s CH4 - 10 2
+0 LPJ_CH4 $ROOT/CH4/v2025-09/LPJ_MERRA2/LPJ_MERRA2_$YYYY_0.5x0.5.nc emis_ch4 2018-2023/1-12/1/0 C xy kg/m2/s CH4 - 10 1
 )))LPJ_MERRA2
 
 #==============================================================================
