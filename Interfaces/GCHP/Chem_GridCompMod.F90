@@ -2694,8 +2694,8 @@ CONTAINS
                   VALUE=RST, RC=STATUS )
 
              ! Set spc conc to background value if rst skipped or var not there
-             IF ( RC /= ESMF_SUCCESS .OR. RST == MAPL_RestartBootstrap .OR.   &
-                  RST == MAPL_RestartSkipInitial ) THEN
+             IF ( ( RC /= ESMF_SUCCESS .OR. RST == MAPL_RestartBootstrap .OR.   &
+                  RST == MAPL_RestartSkipInitial ) .AND. (INDEX( ThisSpc%Name,'_jac' )==0 )) THEN
                 DO L = 1, State_Grid%NZ
                 DO J = 1, State_Grid%NY
                 DO I = 1, State_Grid%NX
@@ -2718,12 +2718,14 @@ CONTAINS
              ENDIF
              
 #ifdef JACOBIAN
-             ! Do special handling if this is a Jacobian tracer             
-             IF ( ThisSpc%Is_JacobianTracer ) THEN
-                State_Chm%Species(IND)%Conc = State_Chm%Species(IND_('CH4'))%Conc
+             ! Do special handling if there is _jac tagger
+             ! use the non-jac species initial concentrations
+             IF ( INDEX( ThisSpc%Name,'_jac' )> 0 ) THEN
+                State_Chm%Species(IND)%Conc = State_Chm%Species(IND_(ThisSpc%Name(1:LEN(trim(ThisSpc%Name))-8)))%Conc
                 IF ( MAPL_am_I_Root()) THEN
                    WRITE(*,*)  &
-                        '   INFO: using the initial concentrations of CH4'&
+                        '   INFO: using the initial concentrations of '&
+                        //ThisSpc%Name(1:LEN(trim(ThisSpc%Name))-8) &
                         //' for the Jacobian tracer '//trim(ThisSpc%Name) 
                 ENDIF
              ENDIF
