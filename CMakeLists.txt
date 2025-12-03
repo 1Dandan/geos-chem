@@ -39,6 +39,17 @@ if(NOT TARGET GEOSChemBuildProperties)
 endif()
 
 #-----------------------------------------------------------------------------
+# Jacobian build option
+#-----------------------------------------------------------------------------
+option(JACOBIAN "Enable Jacobian code paths in GEOS-Chem" OFF)
+
+if(JACOBIAN)
+    # Define JACOBIAN for all GEOS-Chem targets that inherit from
+    # GEOSChemBuildProperties
+    target_compile_definitions(GEOSChemBuildProperties INTERFACE JACOBIAN)
+endif()
+
+#-----------------------------------------------------------------------------
 # Add all the subdirectories.
 # Each subdirectory specifies how it should be built.
 #-----------------------------------------------------------------------------
