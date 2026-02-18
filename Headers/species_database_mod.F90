@@ -1062,7 +1062,11 @@ CONTAINS
              ThisSpc%WD_Is_SO2 = v_bool
          
           ELSE IF ( INDEX( key, "%WD_Is_DSTbin" ) > 0 ) THEN
-             CALL QFYAML_Add_Get( yml, key, v_bool, "", RC )
+             IF ( addSpc ) THEN
+                CALL QFYAML_Add_Get( yml, key, v_bool, "", RC )
+             ELSE
+                CALL QFYAML_Get( yml, key, v_bool, RC )
+             ENDIF
              IF ( RC /= GC_SUCCESS ) GOTO 999
              ThisSpc%WD_Is_DSTbin = v_bool
 
@@ -1112,13 +1116,21 @@ CONTAINS
           
           ! add washout parameters for dust species (D. Zhang, 28 Jun, 2024)
           ELSE IF ( INDEX( key, "%WD_WashoutRainPara" ) > 0 ) THEN
-             CALL QFYAML_Add_Get( yml, key, a_real_2, "", RC )
+             IF ( addSpc ) THEN
+                CALL QFYAML_Add_Get( yml, key, a_real_2, "", RC )
+             ELSE
+                CALL QFYAML_Get( yml, key, a_real_2, RC )
+             ENDIF
              IF ( RC /= GC_SUCCESS ) GOTO 999
              ThisSpc%WD_WashoutRainPara(1) = DBLE( a_real_2(1) ) ! Do not roundoff 
              ThisSpc%WD_WashoutRainPara(2) = DBLE( a_real_2(2) )
 
           ELSE IF ( INDEX( key, "%WD_WashoutSnowPara" ) > 0 ) THEN
-             CALL QFYAML_Add_Get( yml, key, a_real_2, "", RC )
+             IF ( addSpc ) THEN
+                CALL QFYAML_Add_Get( yml, key, a_real_2, "", RC )
+             ELSE
+                CALL QFYAML_Get( yml, key, a_real_2, RC )
+             ENDIF
              IF ( RC /= GC_SUCCESS ) GOTO 999
              ThisSpc%WD_WashoutSnowPara(1) = DBLE( a_real_2(1) )
              ThisSpc%WD_WashoutSnowPara(2) = DBLE( a_real_2(2) )
