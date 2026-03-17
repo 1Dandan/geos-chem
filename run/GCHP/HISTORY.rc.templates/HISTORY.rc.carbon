@@ -327,23 +327,6 @@ COLLECTIONS: 'SpeciesConc',
                                       'MFY      ', 'GCHPctmEnv',
 ::
 #==============================================================================
-# Diagnostics on level edges
-  LevelEdgeDiags.template:       '%y4%m2%d2_%h2%n2z.nc4',
-  LevelEdgeDiags.format:         'CFIO',
-  LevelEdgeDiags.timestampStart: .true.
-  LevelEdgeDiags.monthly:        1
-  LevelEdgeDiags.frequency:      010000
-  LevelEdgeDiags.duration:       010000
-  LevelEdgeDiags.mode:           'time-averaged'
-  LevelEdgeDiags.fields:         'Met_CMFMC   ', 'GCHPchem',
-                                 'Met_PEDGE   ', 'GCHPchem',
-                                #'Met_PEDGEDRY', 'GCHPchem',
-                                #'Met_PFICU   ', 'GCHPchem',
-                                #'Met_PFILSAN ', 'GCHPchem',
-                                #'Met_PFLCU   ', 'GCHPchem',
-                                #'Met_PFLLSAN ', 'GCHPchem',
-::
-#==============================================================================
   KppDiags.template:          '%y4%m2%d2_%h2%n2z.nc4',
   KppDiags.format:            'CFIO',
   KppDiags.monthly:           1
