@@ -2718,17 +2718,25 @@ CONTAINS
              ENDIF
              
 #ifdef JACOBIAN
-             ! Do special handling if there is _jac tagger
-             ! use the non-jac species initial concentrations
-             IF ( INDEX( ThisSpc%Name,'_jac' )> 0 ) THEN
-                State_Chm%Species(IND)%Conc = State_Chm%Species(IND_(ThisSpc%Name(1:LEN(trim(ThisSpc%Name))-8)))%Conc
-                IF ( MAPL_am_I_Root()) THEN
-                   WRITE(*,*)  &
-                        '   INFO: using the initial concentrations of '&
-                        //ThisSpc%Name(1:LEN(trim(ThisSpc%Name))-8) &
-                        //' for the Jacobian tracer '//trim(ThisSpc%Name) 
+            ! Special handling for _jac tagged species.
+            ! Cold start: CH4_jacXXXX absent from the initial restart -> MAPL
+            !   bootstraps the field, so initialize it from the parent (CH4).
+            ! Continuation: CH4_jacXXXX present in the internal (mid-run)
+            !   checkpoint -> keep those values, do NOT overwrite with CH4.
+            ! Reuse the same restart-presence signal (RC/RST) computed above.
+            IF ( INDEX( ThisSpc%Name,'_jac' ) > 0 ) THEN
+                IF ( RC  /= ESMF_SUCCESS         .OR. &
+                    RST == MAPL_RestartBootstrap .OR. &
+                    RST == MAPL_RestartSkipInitial ) THEN
+                    State_Chm%Species(IND)%Conc = &
+                        State_Chm%Species(IND_(ThisSpc%Name(1:LEN(TRIM(ThisSpc%Name))-8)))%Conc
+                    IF ( MAPL_am_I_Root() ) THEN
+                        WRITE(*,*) &
+                            '   INFO: '//TRIM(ThisSpc%Name)//' not in restart; initializing from '// &
+                            ThisSpc%Name(1:LEN(TRIM(ThisSpc%Name))-8)
+                    ENDIF
                 ENDIF
-             ENDIF
+            ENDIF
 #endif
              ThisSpc => NULL()
           ENDDO
